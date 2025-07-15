@@ -2,18 +2,22 @@
 
 int main() {
     int hours, minutes, seconds;
-    int total_hours, total_minutes;
 
-    // Get input from user
-    scanf("%d %d %d", &hours, &minutes, &seconds);
 
-    // Calculate total hours and minutes
-    total_hours = hours + minutes / 60;
-    total_minutes = minutes % 60;
+    scanf("%d", &hours);
+    scanf("%d", &minutes);
+    scanf("%d", &seconds);
 
-    // Print output
-    printf("Total Number of hours is %d\n", total_hours);
-    printf("Total Number of minutes is %d\n", total_minutes);
+    
+    minutes += seconds / 60;
+    seconds = seconds % 60;
+
+    hours += minutes / 60;
+    minutes = minutes % 60;
+
+    
+    printf("Total Number of hours is %d\n", hours);
+    printf("Total Number of minutes is %d\n", minutes);
     printf("Total Number of seconds is %d\n", seconds);
 
     return 0;

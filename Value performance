@@ -1,9 +1,16 @@
-#include<stdio.h>
-int main ()
-{
-int intnum =4;
-float floatnum =5.678; 
-printf("%d\n",intnum);
-printf("%.2f\n",floatnum);
-return 0;
+#include <stdio.h>
+
+int main() {
+    int intNum;
+    float floatNum;
+
+  
+    scanf("%d", &intNum);
+    scanf("%f", &floatNum);
+
+
+    printf("%d\n", intNum);
+    printf("%.2f\n", floatNum);
+
+    return 0;
 }
